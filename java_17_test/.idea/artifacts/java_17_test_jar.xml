@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="java_17_test:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/java_17_test_jar</output-path>
+    <root id="archive" name="Java 17 Test.jar">
+      <element id="module-output" name="java_17_test" />
+    </root>
+  </artifact>
+</component>

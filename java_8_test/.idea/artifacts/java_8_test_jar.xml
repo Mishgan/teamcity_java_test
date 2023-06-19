@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="java_8_test:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/java_8_test_jar</output-path>
+    <root id="archive" name="Java 8 Test.jar">
+      <element id="module-output" name="java_8 _test" />
+    </root>
+  </artifact>
+</component>
