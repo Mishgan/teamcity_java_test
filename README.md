@@ -1,6 +1,6 @@
 # teamcity_java_test
 
-This repository contains two simple "Hello Project" examples written in Java (version 2.13.6). One is compatible with Java 1.8, while the other works with Java 17. The only difference between the projects is their Java version. Both projects can be built successfully locally using IntelliJ IDEA 20231.2.
+This repository contains two simple "Hello World" examples written in Java (version 2.13.6). One is compatible with Java 1.8, while the other works with Java 17. The only difference between the projects is their Java version. Both projects can be built successfully locally using IntelliJ IDEA 20231.2.
 
 However, when building with TeamCity 2023.05, only the Java 1.8 version can be built successfully. Attempting to build the Java 17 version results in the following exception:
 
