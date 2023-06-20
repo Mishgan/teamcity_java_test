@@ -1,0 +1,186 @@
+Build 'Teamcity Java Test / Build' #22, default branch 'master'
+Triggered 2023-06-19 10:49:15 by 'Mikhail Varnavskih (mikhail.varnavskikh)'
+Started 2023-06-19 10:49:16 on agent 'Windows agent / Office PC 1'
+Finished 2023-06-19 10:49:48 with status FAILURE 'Exit code 1 (Step: IntelliJ IDEA Project)'
+VCS revisions: 'TeamcityJavaTest_HttpsGithubComMishganTeamcityJavaTestGitRefsHeadsMaster' (Git, instance id 4): '0c4fefd9697f733acd3a558abaf0ef3bd5210c96' (branch: 'refs/heads/master')
+TeamCity URL https://new-teamcity.vonstierlitz.com/viewLog.html?buildId=52&buildTypeId=TeamcityJavaTest_Build 
+TeamCity server version is 2023.05 (build 129203), server timezone: UTC
+
+[10:49:15]E: bt5 (32s)
+[10:49:15]i: TeamCity server version is 2023.05 (build 129203)
+[10:49:15] : The build is removed from the queue to be prepared for the start
+[10:49:15] : Collecting changes in 1 VCS root
+[10:49:15] :	 [Collecting changes in 1 VCS root] VCS Root details
+[10:49:15] :		 [VCS Root details] "https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master" {instance id=4, parent internal id=3, parent id=TeamcityJavaTest_HttpsGithubComMishganTeamcityJavaTestGitRefsHeadsMaster, description: "https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master"}
+[10:49:15]i:	 [Collecting changes in 1 VCS root] Loading current repository state for VCS root 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master'
+[10:49:15]i:		 [Loading current repository state for VCS root 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master'] VCS root 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master': git -c core.askpass=/home/teamcity/TeamCity/temp/pass15412806221828876133 -c credential.helper= ls-remote origin
+[10:49:15]i:	 [Collecting changes in 1 VCS root] Detecting changes in VCS root 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master' (used in 'Build')
+[10:49:15]i:	 [Collecting changes in 1 VCS root] Will collect changes for 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master' starting from revision 0c4fefd9697f733acd3a558abaf0ef3bd5210c96
+[10:49:15] :	 [Collecting changes in 1 VCS root] Compute revision for 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master'
+[10:49:15] :		 [Compute revision for 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master'] Upper limit revision: 0c4fefd9697f733acd3a558abaf0ef3bd5210c96
+[10:49:15]i:		 [Compute revision for 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master'] MaxModId = 22
+[10:49:15] :		 [Compute revision for 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master'] The first revision that was detected in the branch refs/heads/master: 9b21c5a1a42134f68317eda9047025484aee0caa
+[10:49:15] :		 [Compute revision for 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master'] The first revision that was detected in the branch refs/heads/master after the last change of the VCS root or checkout rules: 9b21c5a1a42134f68317eda9047025484aee0caa
+[10:49:15] :		 [Compute revision for 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master'] Latest commit attached to build configuration (with id <= 22): 0c4fefd9697f733acd3a558abaf0ef3bd5210c96
+[10:49:15] :		 [Compute revision for 'https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master'] Computed revision: 0c4fefd9697f733acd3a558abaf0ef3bd5210c96
+[10:49:15] : Starting the build on the agent "Windows agent / Office PC 1"
+[10:49:17]i: Agent time zone: Europe/Moscow
+[10:49:17]i: Agent is running under JRE: 17.0.7+7-LTS
+[10:49:17] : Updating tools for build
+[10:49:17] :	 [Updating tools for build] Found 1 tool used by the build: intellij.ideaIU-2023.1.2
+[10:49:17] :	 [Updating tools for build] All used tools are up-to-date
+[10:49:17] : Clearing temporary directory: C:\BuildAgent\temp\buildTmp
+[10:49:17]i: Preparing performance monitoring data directory: C:\BuildAgent\system\perfmon
+[10:49:17]i: Performance monitor is using command line: [cscript, C:\BuildAgent\system\perfmon\scripts/perfmon.vbs, C:\BuildAgent\system\perfmon\temp\52\perfmon.csv, 1000]
+[10:49:17]i: Starting performance monitoring process
+[10:49:23]i: Performance monitoring process started
+[10:49:23] : Publishing internal artifacts
+[10:49:23] :	 [Publishing internal artifacts] Publishing 1 file using [WebPublisher]
+[10:49:23] :	 [Publishing internal artifacts] Publishing 1 file using [ArtifactsCachePublisherImpl]
+[10:49:23]i:	 [Publishing internal artifacts] Will publish 1 artifact(s) to TeamCity node with id MAIN_SERVER
+[10:49:23] : Using vcs information from agent file: 75e3662bb43dcd0c.xml
+[10:49:23] : Checkout directory: C:\BuildAgent\work\75e3662bb43dcd0c
+[10:49:23] : Updating sources: auto checkout (on agent) (2s)
+[10:49:23] :	 [Updating sources] Will use agent side checkout
+[10:49:23] :	 [Updating sources] VCS Root: https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master (2s)
+[10:49:23] :		 [VCS Root: https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master] revision: 0c4fefd9697f733acd3a558abaf0ef3bd5210c96
+[10:49:23]i:		 [VCS Root: https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master] Mirrors automatically enabled
+[10:49:23] :		 [VCS Root: https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master] Git version: 2.39.1.0
+[10:49:23] :		 [VCS Root: https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master] Update git mirror (C:\BuildAgent\system\git\git-5E755435.git) (1s)
+[10:49:24] :			 [Update git mirror (C:\BuildAgent\system\git\git-5E755435.git)] "C:\Program Files\Git\bin\git.exe" config http.sslCAInfo
+[10:49:24] :			 [Update git mirror (C:\BuildAgent\system\git\git-5E755435.git)] "C:\Program Files\Git\bin\git.exe" config --unset http.sslCAInfo
+[10:49:24] :			 [Update git mirror (C:\BuildAgent\system\git\git-5E755435.git)] "C:\Program Files\Git\bin\git.exe" show-ref
+[10:49:24] :			 [Update git mirror (C:\BuildAgent\system\git\git-5E755435.git)] "C:\Program Files\Git\bin\git.exe" -c core.askpass=C:\BuildAgent\temp\buildTmp\pass12217036197659295346.bat -c credential.helper= ls-remote origin
+[10:49:25] :			 [Update git mirror (C:\BuildAgent\system\git\git-5E755435.git)] "C:\Program Files\Git\bin\git.exe" show-ref refs/heads/master
+[10:49:25] :			 [Update git mirror (C:\BuildAgent\system\git\git-5E755435.git)] "C:\Program Files\Git\bin\git.exe" log -n1 --pretty=format:%H%x20%s 0c4fefd9697f733acd3a558abaf0ef3bd5210c96 --
+[10:49:25] :			 [Update git mirror (C:\BuildAgent\system\git\git-5E755435.git)] No 'git fetch' required: commit '0c4fefd9697f733acd3a558abaf0ef3bd5210c96' is in the local repository clone pointed by 'refs/heads/master'.
+[10:49:25] :			 [Update git mirror (C:\BuildAgent\system\git\git-5E755435.git)] "C:\Program Files\Git\bin\git.exe" pack-refs --all
+[10:49:25] :		 [VCS Root: https://github.com/Mishgan/teamcity_java_test.git#refs/heads/master] Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] "C:\Program Files\Git\bin\git.exe" rev-parse --is-shallow-repository
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] "C:\Program Files\Git\bin\git.exe" config lfs.storage C:\BuildAgent\system\git\git-5E755435.git\lfs
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] "C:\Program Files\Git\bin\git.exe" config core.sparseCheckout true
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] "C:\Program Files\Git\bin\git.exe" config http.sslCAInfo
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] "C:\Program Files\Git\bin\git.exe" config --unset http.sslCAInfo
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] "C:\Program Files\Git\bin\git.exe" show-ref
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] "C:\Program Files\Git\bin\git.exe" show-ref refs/remotes/origin/master
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] "C:\Program Files\Git\bin\git.exe" log -n1 --pretty=format:%H%x20%s 0c4fefd9697f733acd3a558abaf0ef3bd5210c96 --
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] No 'git fetch' required: commit '0c4fefd9697f733acd3a558abaf0ef3bd5210c96' is in the local repository clone pointed by 'refs/remotes/origin/master'.
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] "C:\Program Files\Git\bin\git.exe" branch
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] "C:\Program Files\Git\bin\git.exe" -c core.askpass=C:\BuildAgent\temp\buildTmp\pass14392463814345773671.bat -c credential.helper= -c credential.helper=C:/BuildAgent/temp/buildTmp/credHelper5930592882259919069.bat reset --hard 0c4fefd9697f733acd3a558abaf0ef3bd5210c96
+[10:49:25] :			 [Update checkout directory (C:\BuildAgent\work\75e3662bb43dcd0c)] "C:\Program Files\Git\bin\git.exe" branch --set-upstream-to=refs/remotes/origin/master
+[10:49:25] : Build preparation done
+[10:49:25]W: Step 1/2: IntelliJ IDEA Project (10s)
+[10:49:27] :	 [Step 1/2] Starting: C:\Work\jdk-1.8.0_372\bin\java.exe -Dagent.home.dir=C:\BuildAgent -Dagent.name=Windows agent / Office PC 1 -Dagent.ownPort=9090 -Dagent.work.dir=C:\BuildAgent\work -Dant.home=C:\BuildAgent\plugins\ant -Dbuild.number=22 -Dbuild.vcs.number=0c4fefd9697f733acd3a558abaf0ef3bd5210c96 -Dbuild.vcs.number.1=0c4fefd9697f733acd3a558abaf0ef3bd5210c96 -Dbuild.vcs.number.TeamcityJavaTest_HttpsGithubComMishganTeamcityJavaTestGitRefsHeadsMaster=0c4fefd9697f733acd3a558abaf0ef3bd5210c96 -Dgant.home=C:\BuildAgent\tools\gant -Dgroovy.home=C:\BuildAgent\tools\gant -Dgroovy.starter.conf=C:\BuildAgent\tools\gant\conf\gant-starter.conf -Didea.home.path=C:\BuildAgent\tools\intellij.ideaIU-2023.1.2 -Djava.awt.headless=true -Djava.io.tmpdir=C:\BuildAgent\temp\buildTmp -Djna.nosys=true -Djps.bundled.ant.path=C:\BuildAgent\plugins\ant -Djps.track.ap.dependencies=false -Dscript.name=C:\BuildAgent\temp\buildTmp\jps.gant -Dteamcity.agent.cpuBenchmark=532 -Dteamcity.agent.dotnet.agent_url=http://localhost:9090/RPC2 -Dteamcity.agent.dotnet.build_id=52 -Dteamcity.auth.password=******* -Dteamcity.auth.userId=TeamCityBuildId=52 -Dteamcity.build.changedFiles.file=C:\BuildAgent\temp\buildTmp\teamcity.changedFiles.txt -Dteamcity.build.checkoutDir=C:\BuildAgent\work\75e3662bb43dcd0c -Dteamcity.build.id=52 -Dteamcity.build.properties.file=C:\BuildAgent\temp\buildTmp\teamcity.build.parameters -Dteamcity.build.tempDir=C:\BuildAgent\temp\buildTmp -Dteamcity.build.workingDir=C:\BuildAgent\work\75e3662bb43dcd0c -Dteamcity.buildConfName=Build -Dteamcity.buildType.id=TeamcityJavaTest_Build -Dteamcity.configuration.properties.file=C:\BuildAgent\temp\buildTmp\teamcity.config.parameters -Dteamcity.dotnet.nunitaddin=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.TeamCity.NUnitAddin-NUnit -Dteamcity.dotnet.nunitlauncher=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.NUnitLauncher.exe -Dteamcity.dotnet.nunitlauncher.msbuild.task=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.MSBuildLoggers.dll -Dteamcity.dotnet.nunitlauncher1.1=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.NUnitLauncher1.1.exe -Dteamcity.dotnet.nunitlauncher2.0=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.NUnitLauncher2.0.exe -Dteamcity.dotnet.nunitlauncher2.0.vsts=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.NUnitLauncher2.0.VSTS.exe -Dteamcity.dotnet.platform=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.TeamCity.PlatformProcessRunner.1.1.exe -Dteamcity.ipr.settings.file=C:\BuildAgent\temp\buildTmp\idearunner11711545731901382928xml -Dteamcity.projectName=Teamcity Java Test -Dteamcity.runner.properties.file=C:\BuildAgent\temp\buildTmp\teamcity.runner.parameters -Dteamcity.runtime.props.file=C:\BuildAgent\temp\agentTmp\ant18013292299695794949runtime -Dteamcity.tests.recentlyFailedTests.file=C:\BuildAgent\temp\buildTmp\teamcity.testsToRunFirst.txt -Dteamcity.version=2023.05 (build 129203) -Duse.memory.temp.cache=true -Xmx4096m -classpath C:\BuildAgent\tools\gant\bootstrap\javac-aware-groovy-starter.jar jetbrains.buildServer.agent.ideaRunner.ToolsAwareGroovyStarter C:\BuildAgent\tools\gant\lib\groovy-all-2.4.21.jar org.codehaus.groovy.tools.GroovyStarter --main gant.Gant --conf C:\BuildAgent\tools\gant\conf\gant-starter.conf --classpath . -f C:\BuildAgent\temp\buildTmp\jps.gant -L C:\BuildAgent\tools\jps\lib -L C:\BuildAgent\tools\jps\lib\rt -L C:\BuildAgent\tools\jps\lib\scala-plugin -P C:/BuildAgent/plugins/antPlugin/ant-runtime.jar;C:/BuildAgent/lib/runtime-util.jar;C:/BuildAgent/lib/serviceMessages.jar;C:/BuildAgent/plugins/idea-runner/idea-runner-common.jar;C:/BuildAgent/plugins/idea-runner/idea-runner-runtime.jar;C:/BuildAgent/plugins/idea-runner/idea-runner-runtime-execution.jar;C:/BuildAgent/plugins/antPlugin/ant-runner.jar;C:/BuildAgent/lib/common.jar;C:/BuildAgent/plugins/idea-runner/idea-runner-runtime-api.jar;C:/BuildAgent/lib/messages.jar
+[10:49:27] :	 [Step 1/2] in directory: C:\BuildAgent\work\75e3662bb43dcd0c
+[10:49:32] :	 [Step 1/2] default:
+[10:49:32] :	 [Step 1/2] Using IntelliJ IDEA External Make #221.5921.22
+[10:49:32] :	 [Step 1/2] Loading project
+[10:49:34] :	 [Step 1/2] Building project; isRebuild:true; isMake:false parallel compilation:false
+[10:49:34] :	 [Step 1/2] Cleaning output directories…
+[10:49:34] :	 [Step 1/2] Cleaned output directories in 133 ms
+[10:49:34] :	 [Step 1/2] Running 'before' tasks
+[10:49:34] :	 [Step 1/2] Checking sources
+[10:49:34] :	 [Step 1/2] Making maven-annotations-test:java_8 _test
+[10:49:34] :	 [Step 1/2] Making maven-annotations-production:java_8 _test
+[10:49:34] :	 [Step 1/2] Making resources for 'java_8 _test' tests
+[10:49:34] :	 [Step 1/2] Making resources for 'java_8 _test' production
+[10:49:34] :		 [Making resources for 'java_8 _test' production] Copying resources… [java_8 _test]
+[10:49:34] :	 [Step 1/2] Making module 'java_8 _test' tests
+[10:49:34] :		 [Making module 'java_8 _test' tests] Searching for compilable files... [tests of java_8 _test]
+[10:49:34]W:	 [Step 1/2] Making module 'java_8 _test' production (1s)
+[10:49:34] :		 [Making module 'java_8 _test' production] Searching for compilable files... [java_8 _test]
+[10:49:34] :		 [Making module 'java_8 _test' production] Parsing java… [java_8 _test]
+[10:49:34] :		 [Making module 'java_8 _test' production] Compiling 1 java files; module: java_8 _test
+[10:49:34]W:		 [Making module 'java_8 _test' production] java (1s)
+[10:49:34]W:			 [java] JPS incremental annotation processing is disabled. Compilation results on partial recompilation may be inaccurate. Use build process "jps.track.ap.dependencies" VM flag to enable/disable incremental annotation processing environment.
+[10:49:35] :	 [Step 1/2] Writing classes… [java_8 _test]
+[10:49:35] :		 [Making module 'java_8 _test' production] Updating dependency information… [java_8 _test]
+[10:49:35] :		 [Making module 'java_8 _test' production] Adding pattern assertions… [java_8 _test]
+[10:49:35] :		 [Making module 'java_8 _test' production] Adding @NotNull assertions… [java_8 _test]
+[10:49:35] :	 [Step 1/2] Running 'after' tasks
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Backward references indexer' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Collect modules with scala' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Google AppEngine Enhancer' took 1 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Groovy compiler' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Groovy stub generator' took 1 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Groovy-Eclipse' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Instrumentation of the Threading Model annotations' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'IntelliLang pattern validator' took 14 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Java' took 1 s 44 ms; 1 sources processed (1044 ms per file)
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Maven dependency resolver' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'NotNull instrumentation' took 3 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Resource compiler' took 31 ms; 1 sources processed (31 ms per file)
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Scala IDEA builder' took 12 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Scala IDEA builder' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Scala compiler-reference indexer' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Scala sbt builder' took 1 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Ajc' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Ajc' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Form-bindings' took 2 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Forms' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] Build duration: Builder 'Rmic' took 0 ms; 0 sources processed
+[10:49:35] :	 [Step 1/2] 
+[10:49:35] :	 [Step 1/2] javac 1.8.0_372 was used to compile [java_8 _test]
+[10:49:35] :	 [Step 1/2] Finished, saving caches…
+[10:49:35] :	 [Step 1/2] Process exited with code 0
+[10:49:35]E: Step 2/2: IntelliJ IDEA Project (2s)
+[10:49:37] :	 [Step 2/2] Starting: C:\Work\jdk-17.0.2\bin\java.exe -Dagent.home.dir=C:\BuildAgent -Dagent.name=Windows agent / Office PC 1 -Dagent.ownPort=9090 -Dagent.work.dir=C:\BuildAgent\work -Dant.home=C:\BuildAgent\plugins\ant -Dbuild.number=22 -Dbuild.vcs.number=0c4fefd9697f733acd3a558abaf0ef3bd5210c96 -Dbuild.vcs.number.1=0c4fefd9697f733acd3a558abaf0ef3bd5210c96 -Dbuild.vcs.number.TeamcityJavaTest_HttpsGithubComMishganTeamcityJavaTestGitRefsHeadsMaster=0c4fefd9697f733acd3a558abaf0ef3bd5210c96 -Dgant.home=C:\BuildAgent\tools\gant -Dgroovy.home=C:\BuildAgent\tools\gant -Dgroovy.starter.conf=C:\BuildAgent\tools\gant\conf\gant-starter.conf -Didea.home.path=C:\BuildAgent\tools\intellij.ideaIU-2023.1.2 -Djava.awt.headless=true -Djava.io.tmpdir=C:\BuildAgent\temp\buildTmp -Djna.nosys=true -Djps.bundled.ant.path=C:\BuildAgent\plugins\ant -Djps.track.ap.dependencies=false -Dscript.name=C:\BuildAgent\temp\buildTmp\jps.gant -Dteamcity.agent.cpuBenchmark=532 -Dteamcity.agent.dotnet.agent_url=http://localhost:9090/RPC2 -Dteamcity.agent.dotnet.build_id=52 -Dteamcity.auth.password=******* -Dteamcity.auth.userId=TeamCityBuildId=52 -Dteamcity.build.changedFiles.file=C:\BuildAgent\temp\buildTmp\teamcity.changedFiles.txt -Dteamcity.build.checkoutDir=C:\BuildAgent\work\75e3662bb43dcd0c -Dteamcity.build.id=52 -Dteamcity.build.properties.file=C:\BuildAgent\temp\buildTmp\teamcity.build.parameters -Dteamcity.build.tempDir=C:\BuildAgent\temp\buildTmp -Dteamcity.build.workingDir=C:\BuildAgent\work\75e3662bb43dcd0c -Dteamcity.buildConfName=Build -Dteamcity.buildType.id=TeamcityJavaTest_Build -Dteamcity.configuration.properties.file=C:\BuildAgent\temp\buildTmp\teamcity.config.parameters -Dteamcity.dotnet.nunitaddin=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.TeamCity.NUnitAddin-NUnit -Dteamcity.dotnet.nunitlauncher=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.NUnitLauncher.exe -Dteamcity.dotnet.nunitlauncher.msbuild.task=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.MSBuildLoggers.dll -Dteamcity.dotnet.nunitlauncher1.1=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.NUnitLauncher1.1.exe -Dteamcity.dotnet.nunitlauncher2.0=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.NUnitLauncher2.0.exe -Dteamcity.dotnet.nunitlauncher2.0.vsts=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.BuildServer.NUnitLauncher2.0.VSTS.exe -Dteamcity.dotnet.platform=C:\BuildAgent\plugins\dotnetPlugin\bin\JetBrains.TeamCity.PlatformProcessRunner.1.1.exe -Dteamcity.ipr.settings.file=C:\BuildAgent\temp\buildTmp\idearunner5126093928055922466xml -Dteamcity.projectName=Teamcity Java Test -Dteamcity.runner.properties.file=C:\BuildAgent\temp\buildTmp\teamcity.runner.parameters -Dteamcity.runtime.props.file=C:\BuildAgent\temp\agentTmp\ant3219484086563393564runtime -Dteamcity.tests.recentlyFailedTests.file=C:\BuildAgent\temp\buildTmp\teamcity.testsToRunFirst.txt -Dteamcity.version=2023.05 (build 129203) -Duse.memory.temp.cache=true -Xmx4096m -classpath C:\BuildAgent\tools\gant\bootstrap\javac-aware-groovy-starter.jar jetbrains.buildServer.agent.ideaRunner.ToolsAwareGroovyStarter C:\BuildAgent\tools\gant\lib\groovy-all-2.4.21.jar org.codehaus.groovy.tools.GroovyStarter --main gant.Gant --conf C:\BuildAgent\tools\gant\conf\gant-starter.conf --classpath . -f C:\BuildAgent\temp\buildTmp\jps.gant -L C:\BuildAgent\tools\jps\lib -L C:\BuildAgent\tools\jps\lib\rt -L C:\BuildAgent\tools\jps\lib\scala-plugin -P C:/BuildAgent/plugins/antPlugin/ant-runtime.jar;C:/BuildAgent/lib/runtime-util.jar;C:/BuildAgent/lib/serviceMessages.jar;C:/BuildAgent/plugins/idea-runner/idea-runner-common.jar;C:/BuildAgent/plugins/idea-runner/idea-runner-runtime.jar;C:/BuildAgent/plugins/idea-runner/idea-runner-runtime-execution.jar;C:/BuildAgent/plugins/antPlugin/ant-runner.jar;C:/BuildAgent/lib/common.jar;C:/BuildAgent/plugins/idea-runner/idea-runner-runtime-api.jar;C:/BuildAgent/lib/messages.jar
+[10:49:37] :	 [Step 2/2] in directory: C:\BuildAgent\work\75e3662bb43dcd0c
+[10:49:38]W:	 [Step 2/2] Process exited with code 1
+[10:49:38]W:	 [Step 2/2] Ant output
+[10:49:38]W:		 [Ant output] java.lang.reflect.InvocationTargetException
+[10:49:38]W:		 [Ant output] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[10:49:38]W:		 [Ant output] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[10:49:38]W:		 [Ant output] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[10:49:38]W:		 [Ant output] 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.tools.GroovyStarter.rootLoader(GroovyStarter.java:116)
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.tools.GroovyStarter.main(GroovyStarter.java:138)
+[10:49:38]W:		 [Ant output] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[10:49:38]W:		 [Ant output] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+[10:49:38]W:		 [Ant output] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[10:49:38]W:		 [Ant output] 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+[10:49:38]W:		 [Ant output] 	at jetbrains.buildServer.agent.ideaRunner.ToolsAwareGroovyStarter.main(ToolsAwareGroovyStarter.java:48)
+[10:49:38]W:		 [Ant output] Caused by: groovy.lang.MissingMethodException: No signature of method: org.codehaus.groovy.tools.RootLoader.getPackage() is applicable for argument types: (java.lang.String) values: [gant]
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:71)
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.runtime.callsite.PojoMetaClassSite.call(PojoMetaClassSite.java:48)
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:128)
+[10:49:38]W:		 [Ant output] 	at gant.Gant.<init>(Gant.groovy:192)
+[10:49:38]W:		 [Ant output] 	at gant.Gant.<init>(Gant.groovy:180)
+[10:49:38]W:		 [Ant output] 	at gant.Gant.<init>(Gant.groovy:173)
+[10:49:38]W:		 [Ant output] 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+[10:49:38]W:		 [Ant output] 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+[10:49:38]W:		 [Ant output] 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+[10:49:38]W:		 [Ant output] 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+[10:49:38]W:		 [Ant output] 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:238)
+[10:49:38]W:		 [Ant output] 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:242)
+[10:49:38]W:		 [Ant output] 	at gant.Gant.main(Gant.groovy:667)
+[10:49:38]W:		 [Ant output] 	... 11 more
+[10:49:37]E:	 [Step 2/2] Process exited with code 1 (Step: IntelliJ IDEA Project)
+[10:49:38]E:	 [Step 2/2] Step IntelliJ IDEA Project failed
+[10:49:38]i: Stopping performance monitoring process
+[10:49:47]i: Performance monitoring process stopped
+[10:49:47]i: Publishing performance monitoring build stages data
+[10:49:47] : Publishing artifacts
+[10:49:47] :	 [Publishing artifacts] Collecting files to publish: [C:\BuildAgent\system\perfmon\temp\52\perfmon.csv=>.teamcity/perfmon/, C:\BuildAgent\temp\agentTmp\build_stages.txt=>.teamcity/perfmon/]
+[10:49:47] :	 [Publishing artifacts] Publishing 2 files using [WebPublisher]: C:/BuildAgent/system/perfmon/temp/52/perfmon.csv, C:/BuildAgent/temp/agentTmp/build_stages.txt => .teamcity/perfmon
+[10:49:47] :	 [Publishing artifacts] Publishing 2 files using [ArtifactsCachePublisherImpl]: C:/BuildAgent/system/perfmon/temp/52/perfmon.csv, C:/BuildAgent/temp/agentTmp/build_stages.txt => .teamcity/perfmon
+[10:49:47]i:	 [Publishing artifacts] Will publish 2 artifact(s) to TeamCity node with id MAIN_SERVER
+[10:49:47] : Publishing internal artifacts
+[10:49:47] :	 [Publishing internal artifacts] Publishing 1 file using [WebPublisher]
+[10:49:47] :	 [Publishing internal artifacts] Publishing 1 file using [ArtifactsCachePublisherImpl]
+[10:49:47]i:	 [Publishing internal artifacts] Will publish 1 artifact(s) to TeamCity node with id MAIN_SERVER
+[10:49:47] : Publishing artifacts
+[10:49:47] :	 [Publishing artifacts] Collecting files to publish: [+:/java_8_test/out => ./java_8_test/, +:/java_17_test/out => ./java_17_test/]
+[10:49:48] :	 [Publishing artifacts] Publishing 2 files using [WebPublisher]: /java_8_test/out => java_8_test
+[10:49:48] :	 [Publishing artifacts] Publishing 2 files using [ArtifactsCachePublisherImpl]: /java_8_test/out => java_8_test
+[10:49:48]i:	 [Publishing artifacts] Will publish 2 artifact(s) to TeamCity node with id MAIN_SERVER
+[10:49:48] :	 [Publishing artifacts] Publishing 2 files using [WebPublisher]: /java_17_test/out => java_17_test
+[10:49:48] :	 [Publishing artifacts] Publishing 2 files using [ArtifactsCachePublisherImpl]: /java_17_test/out => java_17_test
+[10:49:48]i:	 [Publishing artifacts] Will publish 2 artifact(s) to TeamCity node with id MAIN_SERVER
+[10:49:48] : Build finished
